@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Ligue MPG - Actualités - Page 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mpg-green': '#00D9A3',
+                        'mpg-dark': '#0A0A0A',
+                        'mpg-gray': '#1A1A1A',
+                        'mpg-light-gray': '#2A2A2A',
+                        'mpg-text': '#E5E5E5',
+                        'mpg-accent': '#FFD700'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-mpg-dark text-mpg-text font-inter min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-mpg-gray border-b border-mpg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h2 class="text-2xl font-bold text-mpg-green">Ma Ligue MPG</h2>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-mpg-green font-medium border-b-2 border-mpg-green pb-1">Actualités</a>
+                    <a href="coachs.html" class="text-mpg-text hover:text-mpg-green transition-colors">Coachs</a>
+                    <span class="text-mpg-text text-sm">Dernière mise à jour le 15/01/2025</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Page Header -->
+        <section class="bg-mpg-gray py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold text-white mb-2">Actualités - Page 2</h1>
+                <p class="text-mpg-text">Articles plus anciens de notre ligue MPG</p>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="py-16 bg-mpg-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">28 Décembre 2024</span>
+                            <span class="bg-mpg-accent text-mpg-dark px-2 py-1 rounded">Match Report</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Finale aller : Les Guerriers mènent la danse
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed mb-4">
+                            Premier match de la finale de notre championnat avec une victoire 
+                            convaincante des Guerriers qui prennent une option sur le titre.
+                        </p>
+                        <div class="bg-mpg-dark border border-mpg-light-gray rounded p-3">
+                            <span class="text-mpg-green font-medium">Les Guerriers 2 - 1 Les Phénix</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">24 Décembre 2024</span>
+                            <span class="bg-pink-600 text-white px-2 py-1 rounded">Événement</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Trêve de Noël : Pause bien méritée
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed">
+                            Les coachs MPG prennent une pause pour les fêtes. Rendez-vous en 2025 
+                            pour la reprise du championnat avec de nouveaux défis !
+                        </p>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">20 Décembre 2024</span>
+                            <span class="bg-purple-600 text-white px-2 py-1 rounded">Analyse</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Bilan de la phase aller
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed">
+                            Retour sur les 18 premières journées avec les performances 
+                            marquantes et les surprises de cette première partie de saison.
+                        </p>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">15 Décembre 2024</span>
+                            <span class="bg-mpg-accent text-mpg-dark px-2 py-1 rounded">Match Report</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Dernière journée : Tout se joue !
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed mb-4">
+                            Une dernière journée sous haute tension qui a déterminé 
+                            les qualifiés pour les phases finales.
+                        </p>
+                        <div class="bg-mpg-dark border border-mpg-light-gray rounded p-3">
+                            <span class="text-mpg-green font-medium">Multiple matchs - Voir détails</span>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">10 Décembre 2024</span>
+                            <span class="bg-blue-600 text-white px-2 py-1 rounded">Transferts</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Derniers transferts avant les phases finales
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed">
+                            Les coachs peaufinent leurs effectifs avant les matchs décisifs. 
+                            Découvrez les derniers mouvements stratégiques.
+                        </p>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+                        <div class="flex gap-3 mb-4 text-sm">
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">5 Décembre 2024</span>
+                            <span class="bg-green-600 text-white px-2 py-1 rounded">Classement</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
+                            Point sur la course aux phases finales
+                        </h3>
+                        <p class="text-mpg-text leading-relaxed">
+                            À quelques journées de la fin, analyse du classement et 
+                            des dernières chances pour accéder aux playoffs.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <nav class="py-8 border-t border-mpg-light-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <ul class="flex justify-center items-center space-x-2">
+                    <li>
+                        <a href="index.html" class="px-4 py-2 text-mpg-green hover:bg-mpg-light-gray rounded transition-colors">Précédent</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="px-4 py-2 text-mpg-text hover:text-mpg-green hover:bg-mpg-light-gray rounded transition-colors">1</a>
+                    </li>
+                    <li>
+                        <span class="px-4 py-2 bg-mpg-green text-mpg-dark rounded font-medium">2</span>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 py-2 text-mpg-text hover:text-mpg-green hover:bg-mpg-light-gray rounded transition-colors">3</a>
+                    </li>
+                    <li>
+                        <span class="px-4 py-2 text-mpg-text cursor-not-allowed">Suivant</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-mpg-gray border-t border-mpg-light-gray py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-mpg-text">&copy; 2025 Ma Ligue MPG. Du foot, des amis, des barres de rire.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- Template pour l'article hero (avec image mais sans score) -->
+<section class="bg-gradient-to-r from-mpg-gray to-mpg-light-gray py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article class="grid lg:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <div class="flex gap-4 text-sm">
+                    <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">[DATE]</span>
+                    <span class="bg-mpg-accent text-mpg-dark px-3 py-1 rounded-full font-medium">[CATEGORY]</span>
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    [TITLE]
+                </h1>
+                <p class="text-lg text-mpg-text leading-relaxed">
+                    [CONTENT]
+                </p>
+                <!-- Section d'informations supplémentaires (optionnelle) -->
+                <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6">
+                    <h4 class="text-mpg-accent font-medium mb-2">[INFO_TITLE]</h4>
+                    <div class="text-sm text-mpg-text space-y-2">
+                        [INFO_CONTENT]
+                    </div>
+                </div>
+            </div>
+            <div class="lg:order-last">
+                <div class="aspect-video bg-mpg-light-gray rounded-lg overflow-hidden">
+                    <img src="[IMAGE_URL]" alt="[IMAGE_ALT]" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Instructions d'utilisation :
+- Remplacer [DATE] par la date de l'article
+- Remplacer [CATEGORY] par la catégorie (Transferts, Analyse, Classement, Événement, etc.)
+- Remplacer [TITLE] par le titre principal
+- Remplacer [CONTENT] par le contenu de l'article
+- Section d'informations (optionnelle) :
+  - Remplacer [INFO_TITLE] par le titre de l'encart (ex: "Points clés", "Transferts", "À retenir")
+  - Remplacer [INFO_CONTENT] par les informations sous forme de liste :
+    <ul><li>• Premier point important</li><li>• Deuxième point</li></ul>
+  - Si pas besoin d'encart, supprimer toute la section "bg-mpg-dark"
+- Remplacer [IMAGE_URL] par l'URL de l'image
+- Remplacer [IMAGE_ALT] par le texte alternatif de l'image
+
+Exemples de catégories et couleurs :
+- Transferts: bg-blue-600 text-white
+- Analyse: bg-purple-600 text-white  
+- Classement: bg-green-600 text-white
+- Événement: bg-pink-600 text-white
+- News: bg-indigo-600 text-white
+-->

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Ligue MPG - Coachs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mpg-green': '#00D9A3',
+                        'mpg-dark': '#0A0A0A',
+                        'mpg-gray': '#1A1A1A',
+                        'mpg-light-gray': '#2A2A2A',
+                        'mpg-text': '#E5E5E5',
+                        'mpg-accent': '#FFD700'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-mpg-dark text-mpg-text font-inter min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-mpg-gray border-b border-mpg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h2 class="text-2xl font-bold text-mpg-green">Ma Ligue MPG</h2>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-mpg-text hover:text-mpg-green transition-colors">Actualités</a>
+                    <a href="coachs.html" class="text-mpg-green font-medium border-b-2 border-mpg-green pb-1">Coachs</a>
+                    <span class="text-mpg-text text-sm">Dernière mise à jour le 15/01/2025</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Coach du mois -->
+        <section class="bg-gradient-to-r from-mpg-gray to-mpg-light-gray py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-6">
+                    <span class="bg-mpg-accent text-mpg-dark px-3 py-1 rounded-full font-medium text-sm">⭐ Coach du mois</span>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-white mt-3 mb-1">Sarah Leblanc</h2>
+                    <p class="text-mpg-green text-lg font-medium">Les Phénix</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-6 items-center">
+                    <!-- Photo du coach -->
+                    <div class="lg:col-span-1">
+                        <div class="aspect-square bg-mpg-light-gray rounded-lg overflow-hidden max-w-xs mx-auto">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b098?w=400&h=400&fit=crop&crop=face" alt="Sarah Leblanc" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Description et stats -->
+                    <div class="lg:col-span-2 space-y-4">
+                        <p class="text-base text-mpg-text leading-relaxed">
+                            Sarah a dominé le mois de janvier avec une série impressionnante de 4 victoires consécutives. 
+                            Sa stratégie défensive impeccable lui a permis de prendre la tête du classement.
+                        </p>
+                        
+                        <!-- Performance du mois -->
+                        <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-4">
+                            <h3 class="text-mpg-accent font-bold mb-3">🏆 Performance du mois</h3>
+                            <div class="space-y-2">
+                                <!-- Match 1 -->
+                                <div class="bg-mpg-gray rounded-lg p-3 flex justify-between items-center">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="text-mpg-green font-bold">V</div>
+                                        <div>
+                                            <div class="text-white font-medium">Les Phénix 3 - 1 Les Titans</div>
+                                            <div class="text-mpg-text text-sm">J18 • 15 janvier</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-mpg-accent font-bold text-lg">89 pts</div>
+                                </div>
+                                
+                                <!-- Match 2 -->
+                                <div class="bg-mpg-gray rounded-lg p-3 flex justify-between items-center">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="text-mpg-green font-bold">V</div>
+                                        <div>
+                                            <div class="text-white font-medium">Les Phénix 2 - 0 Les Aigles</div>
+                                            <div class="text-mpg-text text-sm">J17 • 8 janvier</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-mpg-accent font-bold text-lg">94 pts</div>
+                                </div>
+                                
+                                <!-- Match 3 -->
+                                <div class="bg-mpg-gray rounded-lg p-3 flex justify-between items-center">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="text-mpg-green font-bold">V</div>
+                                        <div>
+                                            <div class="text-white font-medium">Les Lions 1 - 2 Les Phénix</div>
+                                            <div class="text-mpg-text text-sm">J16 • 1 janvier</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-mpg-accent font-bold text-lg">76 pts</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Citation -->
+                        <div class="bg-mpg-green bg-opacity-10 border-l-4 border-mpg-green p-3 rounded">
+                            <p class="text-mpg-green font-medium italic text-sm">
+                                "La clé c'est de toujours croire en ses choix, même quand tout semble perdu !"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tous les Coachs -->
+        <section class="py-16 bg-mpg-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Tous nos coachs</h2>
+                <!-- Première ligne : 2 coachs -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Coach 1 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Martin Dubois" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Martin Dubois</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Guerriers FC</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">3ème</div>
+                                <div class="text-mpg-text text-xs">12V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Stratège offensif qui privilégie l'attaque. Ses compositions audacieuses font souvent la différence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 2 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop&crop=face" alt="Emma Durand" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Emma Durand</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Faucons</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">2ème</div>
+                                <div class="text-mpg-text text-xs">13V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Tacticienne parfaite qui équilibre attaque et défense avec un timing impeccable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 3 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Alex Moreau" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Alex Moreau</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Titans</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">7ème</div>
+                                <div class="text-mpg-text text-xs">8V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Spécialiste des pépites qui déniche les jeunes talents avant tout le monde.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 4 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Julie Rousseau" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Julie Rousseau</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Lions FC</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">5ème</div>
+                                <div class="text-mpg-text text-xs">10V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Coach imprévisible qui change de tactique chaque semaine avec succès.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deuxième ligne : 2 coachs -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Coach 3 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face" alt="Nicolas Petit" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Nicolas Petit</h3>
+                                <p class="text-mpg-green text-sm font-medium">FC Dynamite</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">6ème</div>
+                                <div class="text-mpg-text text-xs">9V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Éternel optimiste qui ne se décourage jamais, même dans la difficulté.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 4 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Alex Moreau" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Alex Moreau</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Titans</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">7ème</div>
+                                <div class="text-mpg-text text-xs">8V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Spécialiste des pépites qui déniche les jeunes talents avant tout le monde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Troisième ligne : 2 coachs -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Coach 5 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" alt="Maxime Lefort" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Maxime Lefort</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Requins</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">8ème</div>
+                                <div class="text-mpg-text text-xs">7V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Roi du mercato qui déniche les bonnes affaires et prend des risques payants.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 6 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=100&h=100&fit=crop&crop=face" alt="Antoine Garcia" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Antoine Garcia</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Bulldogs</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">9ème</div>
+                                <div class="text-mpg-text text-xs">6V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Guerrier qui ne lâche jamais rien et se bat jusqu'au bout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quatrième ligne : 2 coachs -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Coach 7 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=100&h=100&fit=crop&crop=face" alt="Léa Fontaine" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Léa Fontaine</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Étoiles</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">10ème</div>
+                                <div class="text-mpg-text text-xs">5V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Spécialiste des comebacks et des remontadas spectaculaires.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coach 8 -->
+                    <div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" alt="Vincent Dubois" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h3 class="text-lg font-bold text-white truncate">Vincent Dubois</h3>
+                                <p class="text-mpg-green text-sm font-medium">Les Météores</p>
+                            </div>
+                            <div class="flex-shrink-0 text-right">
+                                <div class="text-mpg-accent font-bold text-lg">11ème</div>
+                                <div class="text-mpg-text text-xs">4V - 18M</div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+                            <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+                                Rookie de la ligue qui apprend vite et surprend par ses choix audacieux.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-mpg-gray border-t border-mpg-light-gray py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-mpg-text">&copy; 2025 Ma Ligue MPG. Du foot, des amis, des barres de rire.</p>
+        </div>
+    </footer>
+</body>
+</html>

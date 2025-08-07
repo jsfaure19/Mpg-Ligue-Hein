@@ -1,0 +1,54 @@
+<!-- Template pour un coach (design horizontal) -->
+<div class="bg-mpg-gray border border-mpg-light-gray rounded-lg hover:border-mpg-green transition-colors p-4">
+    <div class="flex items-center space-x-4">
+        <!-- Photo du coach -->
+        <div class="flex-shrink-0">
+            <div class="w-16 h-16 bg-mpg-light-gray rounded-full overflow-hidden">
+                <img src="[IMAGE_URL]" alt="[COACH_NAME]" class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <!-- Infos du coach -->
+        <div class="flex-grow min-w-0">
+            <h3 class="text-lg font-bold text-white truncate">[COACH_NAME]</h3>
+            <p class="text-mpg-green text-sm font-medium">[CLUB_NAME]</p>
+        </div>
+        
+        <!-- Stats -->
+        <div class="flex-shrink-0 text-right">
+            <div class="text-mpg-accent font-bold text-lg">[POSITION]</div>
+            <div class="text-mpg-text text-xs">[WINS]V - [MATCHES]M</div>
+        </div>
+    </div>
+    
+    <!-- Description courte (optionnelle) -->
+    <div class="mt-3 pt-3 border-t border-mpg-light-gray">
+        <p class="text-mpg-text text-sm leading-relaxed line-clamp-2">
+            [SHORT_DESCRIPTION]
+        </p>
+    </div>
+</div>
+
+<!-- Instructions d'utilisation :
+- Remplacer [IMAGE_URL] par l'URL de la photo du coach (format rond recommandé)
+- Remplacer [COACH_NAME] par le nom complet du coach
+- Remplacer [CLUB_NAME] par le nom de l'équipe/club MPG
+- Remplacer [POSITION] par la position au classement (ex: 1ère, 3ème)
+- Remplacer [WINS] par le nombre de victoires
+- Remplacer [MATCHES] par le nombre de matchs joués
+- Remplacer [SHORT_DESCRIPTION] par une description courte (1-2 phrases)
+
+Ce template est optimisé pour 2 coachs par ligne sur desktop.
+Format compact et horizontal pour un meilleur affichage en grille.
+
+Pour les images de coaches, utilisez des photos Unsplash avec des paramètres comme :
+https://images.unsplash.com/photo-ID?w=100&h=100&fit=crop&crop=face
+
+Exemple de variables :
+[COACH_NAME] = "Martin Dubois"
+[CLUB_NAME] = "Les Guerriers FC"
+[POSITION] = "3ème"
+[WINS] = "12"
+[MATCHES] = "18"
+[SHORT_DESCRIPTION] = "Stratège offensif qui privilégie l'attaque. Ses compositions audacieuses font souvent la différence."
+-->

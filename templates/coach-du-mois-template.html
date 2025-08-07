@@ -1,0 +1,68 @@
+<!-- Template pour le coach du mois (section hero compacte) -->
+<section class="bg-gradient-to-r from-mpg-gray to-mpg-light-gray py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6">
+            <span class="bg-mpg-accent text-mpg-dark px-3 py-1 rounded-full font-medium text-sm">⭐ Coach du mois</span>
+            <h2 class="text-2xl lg:text-3xl font-bold text-white mt-3 mb-1">[COACH_NAME]</h2>
+            <p class="text-mpg-green text-lg font-medium">[CLUB_NAME]</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-3 gap-6 items-center">
+            <!-- Photo du coach -->
+            <div class="lg:col-span-1">
+                <div class="aspect-square bg-mpg-light-gray rounded-lg overflow-hidden max-w-xs mx-auto">
+                    <img src="[IMAGE_URL]" alt="[COACH_NAME]" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Description et stats -->
+            <div class="lg:col-span-2 space-y-4">
+                <p class="text-base text-mpg-text leading-relaxed">
+                    [DESCRIPTION]
+                </p>
+                
+                <!-- Performance du mois -->
+                <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-4">
+                    <h3 class="text-mpg-accent font-bold mb-3">🏆 Performance du mois</h3>
+                    <div class="space-y-2">
+                        [MATCHES_LIST]
+                    </div>
+                </div>
+                
+                <!-- Citation ou fait marquant -->
+                <div class="bg-mpg-green bg-opacity-10 border-l-4 border-mpg-green p-3 rounded">
+                    <p class="text-mpg-green font-medium italic text-sm">
+                        "[QUOTE]"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instructions d'utilisation :
+- Remplacer [COACH_NAME] par le nom complet du coach du mois
+- Remplacer [CLUB_NAME] par le nom de son équipe MPG
+- Remplacer [IMAGE_URL] par l'URL de sa photo
+- Remplacer [DESCRIPTION] par une description de ses performances du mois
+- Remplacer [MATCHES_LIST] par la liste des matchs du mois sous cette forme :
+  <!-- Match 1 -->
+  <div class="bg-mpg-gray rounded-lg p-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+          <div class="text-mpg-green font-bold">V</div> <!-- ou N pour nul, D pour défaite -->
+          <div>
+              <div class="text-white font-medium">Équipe1 X - Y Équipe2</div>
+              <div class="text-mpg-text text-sm">J18 • 15 janvier</div>
+          </div>
+      </div>
+      <div class="text-mpg-accent font-bold text-lg">89 pts</div>
+  </div>
+- Remplacer [QUOTE] par une citation du coach ou un fait marquant
+
+Exemple de variables :
+[COACH_NAME] = "Sarah Leblanc"
+[CLUB_NAME] = "Les Phénix"
+[DESCRIPTION] = "Sarah a dominé le mois de janvier avec une série de 4 victoires consécutives..."
+[MATCHES_LIST] = (voir format ci-dessus, 2 à 4 matchs)
+[QUOTE] = "La clé c'est de toujours croire en ses choix, même quand tout semble perdu !"
+-->
