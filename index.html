@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Ligue MPG - Actualités</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'mpg-green': '#00D9A3',
-                        'mpg-dark': '#0A0A0A',
-                        'mpg-gray': '#1A1A1A',
-                        'mpg-light-gray': '#2A2A2A',
-                        'mpg-text': '#E5E5E5',
-                        'mpg-accent': '#FFD700'
-                    },
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ligue Hein - Actualités</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mpg-green': '#00D9A3',
+            'mpg-dark': '#0A0A0A',
+            'mpg-gray': '#1A1A1A',
+            'mpg-light-gray': '#2A2A2A',
+            'mpg-text': '#E5E5E5',
+            'mpg-accent': '#FFD700'
+          },
+          fontFamily: {
+              'inter': ['Inter', 'sans-serif'],
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 <body class="bg-mpg-dark text-mpg-text font-inter min-h-screen">
-    <!-- Navigation -->
-    <nav class="bg-mpg-gray border-b border-mpg-light-gray">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h2 class="text-2xl font-bold text-mpg-green">Ma Ligue MPG</h2>
-                </div>
-                <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-mpg-green font-medium border-b-2 border-mpg-green pb-1">Actualités</a>
-                    <a href="coachs.html" class="text-mpg-text hover:text-mpg-green transition-colors">Coachs</a>
-                    <span class="text-mpg-text text-sm">Dernière mise à jour le 15/01/2025</span>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="bg-mpg-gray border-b border-mpg-light-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+              <div class="flex items-center">
+                  <h2 class="text-2xl font-bold text-mpg-green">Ligue Hein</h2>
+              </div>
+              <div class="flex items-center space-x-8">
+                  <a href="index.html" class="text-mpg-green font-medium border-b-2 border-mpg-green pb-1">Actualités</a>
+                  <a href="coachs.html" class="text-mpg-text hover:text-mpg-green transition-colors hidden">Coachs</a>
+                  <span class="text-mpg-text text-sm">Dernière mise à jour le 07/08/2025</span>
+              </div>
+          </div>
+      </div>
+  </nav>
 
     <!-- Main Content -->
     <main class="flex-1">
         <!-- Hero Section -->
         <section class="bg-gradient-to-r from-mpg-gray to-mpg-light-gray py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <article class="grid lg:grid-cols-2 gap-8 items-center">
+                <article class="space-y-8">
+                    <!-- Ligne 1: Tags + Titre sur toute la largeur -->
                     <div class="space-y-6">
                         <div class="flex gap-4 text-sm">
-                            <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">15 Janvier 2025</span>
-                            <span class="bg-mpg-accent text-mpg-dark px-3 py-1 rounded-full font-medium">Match Report</span>
+                            <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">07/08/2025</span>
+                            <span class="bg-purple-600 text-black px-3 py-1 rounded-full font-medium">Source L'épique</span>
                         </div>
                         <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                            Derby explosif : Les Guerriers s'imposent face aux Titans
+                            🎉 Naissance de la Ligue Hein 🎉
                         </h1>
-                        <p class="text-lg text-mpg-text leading-relaxed">
-                            Dans un match haletant, les Guerriers de Coach Martin ont dominé les Titans 3-1 
-                            grâce à un triplé magistral de Mbappé. Une victoire qui relance complètement 
-                            la course au titre dans notre ligue.
-                            <br>
-                            Dans un match haletant, les Guerriers de Coach Martin ont dominé les Titans 3-1 
-                            grâce à un triplé magistral de Mbappé. Une victoire qui relance complètement 
-                            la course au titre dans notre ligue.
-                        </p>
-                        <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="text-center">
-                                    <div class="text-mpg-text text-sm">Les Guerriers</div>
-                                    <div class="text-3xl font-bold text-mpg-green">3</div>
-                                </div>
-                                <div class="text-mpg-text font-medium">VS</div>
-                                <div class="text-center">
-                                    <div class="text-mpg-text text-sm">Les Titans</div>
-                                    <div class="text-3xl font-bold text-mpg-green">1</div>
-                                </div>
-                            </div>
-                            <div class="border-t border-mpg-light-gray pt-4">
-                                <h4 class="text-mpg-accent font-medium mb-2">Buteurs :</h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class="text-mpg-green font-medium text-xs mb-1">Les Guerriers :</h5>
-                                        <ul class="text-sm text-mpg-text space-y-1">
-                                            <li>⚽ Mbappé (15', 34', 67')</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h5 class="text-mpg-green font-medium text-xs mb-1">Les Titans :</h5>
-                                        <ul class="text-sm text-mpg-text space-y-1">
-                                            <li>⚽ Haaland (82')</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    </div>
+                    
+                    <!-- Ligne 2: Texte (moitié) + Image (moitié) -->
+                    <div class="grid lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <p class="text-base md:text-lg text-mpg-text leading-relaxed">
+                                C'est officiel : la Ligue Hein est née ! Une toute nouvelle ligue MPG qui promet des clashs épiques, des choix tactiques douteux, et des buts venus de nulle part.<br/><br/>
+                                Aux commandes, cinq nouveaux coachs prêts à en découdre :<br/>
+                                💶 Maxime.D, le roi du Moneyball (ou pas)<br/>
+                                🎯 Greg, élu barbe d'or devant Mitroglou en 2017<br/>
+                                🔥 Camille, bientôt dans la ligue Hein<br/>
+                                😂 Jérémie, à jamais le premier sous Tapie<br/>
+                                ⚡ Robin, chaos maîtrisé (ou pas du tout)
+                            </p>
+                        </div>
+                        <div>
+                            <div class="aspect-video rounded-lg overflow-hidden">
+                                <img src="https://mpg.football/build/_assets/logo_2025_white-RW4X4GVR.png" alt="MPG Logo" class="w-full h-full object-contain">
                             </div>
                         </div>
                     </div>
-                    <div class="lg:order-last">
-                        <div class="aspect-video bg-mpg-light-gray rounded-lg overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&h=450&fit=crop" alt="Derby Les Guerriers vs Les Titans" class="w-full h-full object-cover">
+                    
+                    <!-- Ligne 3: Reste du texte sur toute la largeur -->
+                    <div>
+                        <p class="text-base md:text-lg text-mpg-text leading-relaxed">
+                            Face à eux, les historiques de la ligue comptent bien défendre leur territoire :<br/>
+                            👨‍💼 Jean-Seb, président autoproclamé de la ligue Hein<br/>
+                            🛥️ Maxime.B, le plus Brestois des Périgourdins<br/>
+                            🏉 Raph, le rugbyman égaré<br/>
+                            😈 Fanny, râleuse pro, victoire ou défaite – ça change rien<br/>
+                            💎 Crystal, bientôt expatriée, mais toujours dispo pour humilier à distance<br/><br/>
+                            Que le meilleur (ou le plus chanceux) gagne. 💥⚽
+                        </p>
+                    </div>
+                    
+                    <!-- Section d'informations supplémentaires (optionnelle) -->
+                    <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6">
+                        <h4 class="text-mpg-accent font-medium mb-2">📢 INFO FLASH – CAMILLE TOUJOURS PORTÉ DISPARU 🕵️‍♂️</h4>
+                        <div class="text-sm text-mpg-text space-y-2">
+                          Alors que la préparation du mercato bat son plein et que les rivalités s’affûtent, 
+                          un siège reste désespérément vide dans la Ligue Hein : Camille n’a toujours pas rejoint la ligue.<br/>
+
+                          Les coachs commencent à s’agiter en coulisses, du côté de la présidence, la pression monte aussi...<br/>
+                          <span class="font-bold">Maxime.D</span> : <span class="italic">"On est à deux doigts de lui envoyer une convocation officielle."</span><br/>
+                          <span class="font-bold">Robin</span> : <span class="italic">"Il a peut-être signé en Arabie Saoudite ?"</span><br/><br/>
+                          🎙️ À suivre dans notre prochain flash info... sauf si Camille clique.
                         </div>
                     </div>
                 </article>
@@ -113,100 +117,28 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white mb-12">Dernières actualités</h2>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Article 1 -->
+                <div class="grid md:grid-cols-2 gap-8">
                     <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
                         <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">12 Janvier 2025</span>
-                            <span class="bg-blue-600 text-white px-2 py-1 rounded">Transferts</span>
+                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">07/08/2025</span>
+                            <span class="bg-purple-600 text-white px-2 py-1 rounded">Source SO FAT</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Mercato hivernal : Les gros coups de la ligue
+                            🖥️ La Ligue Hein a son site ! ⚽💻
                         </h3>
                         <p class="text-mpg-text leading-relaxed">
-                            Le mercato d'hiver bat son plein ! Découvrez tous les transferts 
-                            qui ont secoué notre ligue cette semaine.
-                        </p>
-                    </article>
+                            C’est un grand jour pour le football de comptoir : la Ligue Hein entre dans l’ère numérique avec le lancement de son site officiel 👉 <a href="https://mpg-ligue-hein.surge.sh" class="text-mpg-green hover:text-mpg-green hover:bg-mpg-light-gray rounded transition-colors">mpg-ligue-hein.surge.sh</a><br/><br/>
 
-                    <!-- Article 2 -->
-                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
-                        <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">10 Janvier 2025</span>
-                            <span class="bg-mpg-accent text-mpg-dark px-2 py-1 rounded">Match Report</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Les Phénix écrasent les Lions
-                        </h3>
-                        <p class="text-mpg-text leading-relaxed mb-4">
-                            Match à sens unique où les Phénix ont dominé de la tête et des épaules 
-                            leurs adversaires du jour.
-                        </p>
-                        <div class="bg-mpg-dark border border-mpg-light-gray rounded p-3">
-                            <span class="text-mpg-green font-medium">Les Phénix 4 - 0 Les Lions</span>
-                        </div>
-                    </article>
+                            Pensé, conçu, codé (entre deux préparations de mercato) par le président-joueur Jean-Seb, 
+                            ce QG digital devient le nouveau terrain de jeu des coachs les plus imprévisibles de la planète MPG.<br/><br/>
 
-                    <!-- Article 3 -->
-                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
-                        <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">8 Janvier 2025</span>
-                            <span class="bg-purple-600 text-white px-2 py-1 rounded">Analyse</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Top 5 des pépites de la ligue
-                        </h3>
-                        <p class="text-mpg-text leading-relaxed">
-                            Quels sont les joueurs qui font la différence cette saison ? 
-                            Notre analyse des meilleures performances.
-                        </p>
-                    </article>
+                            📌 Au menu ?<br/>
+                            – Les résumés de matchs enflammés<br/>
+                            – Des classements qui font mal ou plaisir (souvent les deux)<br/>
+                            – Des punchlines, du drama, de la mauvaise foi<br/>
+                            – Et peut-être un jour… des interviews exclusives de coachs en dépression après un but MPG de Brendan Chardonnet<br/><br/>
 
-                    <!-- Article 4 -->
-                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
-                        <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">5 Janvier 2025</span>
-                            <span class="bg-mpg-accent text-mpg-dark px-2 py-1 rounded">Match Report</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Remontada spectaculaire des Aigles
-                        </h3>
-                        <p class="text-mpg-text leading-relaxed mb-4">
-                            Menés 3-0 à la mi-temps, les Aigles ont réussi l'impossible en 
-                            égalisant dans les dernières minutes.
-                        </p>
-                        <div class="bg-mpg-dark border border-mpg-light-gray rounded p-3">
-                            <span class="text-mpg-green font-medium">Les Aigles 3 - 3 FC Dynamite</span>
-                        </div>
-                    </article>
-
-                    <!-- Article 5 -->
-                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
-                        <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">3 Janvier 2025</span>
-                            <span class="bg-green-600 text-white px-2 py-1 rounded">Classement</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Point sur le classement à mi-saison
-                        </h3>
-                        <p class="text-mpg-text leading-relaxed">
-                            Où en sont nos équipes après la moitié de la saison ? 
-                            Analyse du classement et des tendances.
-                        </p>
-                    </article>
-
-                    <!-- Article 6 -->
-                    <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
-                        <div class="flex gap-3 mb-4 text-sm">
-                            <span class="bg-mpg-light-gray text-mpg-text px-2 py-1 rounded">1 Janvier 2025</span>
-                            <span class="bg-pink-600 text-white px-2 py-1 rounded">Événement</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 hover:text-mpg-green transition-colors">
-                            Bonne année 2025 à tous les coachs !
-                        </h3>
-                        <p class="text-mpg-text leading-relaxed">
-                            L'équipe vous souhaite une excellente année 2025 pleine de 
-                            victoires et de bons moments entre amis.
+                            💥 <a href="https://mpg-ligue-hein.surge.sh" class="text-mpg-green hover:text-mpg-green hover:bg-mpg-light-gray rounded transition-colors">mpg-ligue-hein.surge.sh</a> – C’est là que ça se passe, hein !<br/>
                         </p>
                     </article>
                 </div>
@@ -214,7 +146,7 @@
         </section>
 
         <!-- Pagination -->
-        <nav class="py-8 border-t border-mpg-light-gray">
+        <nav class="hidden py-8 border-t border-mpg-light-gray">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <ul class="flex justify-center items-center space-x-2">
                     <li>
@@ -240,7 +172,7 @@
     <!-- Footer -->
     <footer class="bg-mpg-gray border-t border-mpg-light-gray py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-mpg-text">&copy; 2025 Ma Ligue MPG. Du foot, des amis, des barres de rire.</p>
+            <p class="text-mpg-text">&copy; 2025 Ligue Hein. Du foot, mais pas que.</p>
         </div>
     </footer>
 </body>
