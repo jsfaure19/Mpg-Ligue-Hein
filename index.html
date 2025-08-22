@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ligue Hein - Actualités</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/components.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,21 +31,8 @@
   </script>
 </head>
 <body class="bg-mpg-dark text-mpg-text font-inter min-h-screen">
-  <!-- Navigation -->
-  <nav class="bg-mpg-gray border-b border-mpg-light-gray">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
-              <div class="flex items-center">
-                  <h2 class="text-2xl font-bold text-mpg-green">Ligue Hein</h2>
-              </div>
-              <div class="flex items-center space-x-8">
-                  <a href="index.html" class="text-mpg-green font-medium border-b-2 border-mpg-green pb-1">Actualités</a>
-                  <a href="coachs.html" class="text-mpg-text hover:text-mpg-green transition-colors hidden">Coachs</a>
-                  <span class="text-mpg-text text-sm">Dernière mise à jour le 09/08/2025</span>
-              </div>
-          </div>
-      </div>
-  </nav>
+  <!-- Placeholder pour la navbar -->
+  <div id="navbar-placeholder"></div>
 
     <!-- Main Content -->
     <main class="flex-1">
@@ -54,11 +43,11 @@
                     <!-- Ligne 1: Tags + Titre sur toute la largeur -->
                     <div class="space-y-6">
                         <div class="flex gap-4 text-sm">
-                            <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">15/08/2025</span>
-                            <span class="bg-purple-600 text-black px-3 py-1 rounded-full font-medium">Le Onze Local</span>
+                            <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">22/08/2025</span>
+                            <span class="bg-purple-600 text-black px-3 py-1 rounded-full font-medium">L'épique</span>
                         </div>
                         <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                            ⚽ Ligue Hein — J1 (Avant-match): des derbys, des promus et déjà des excuses
+                            ⚽ Ligue "Hein" — Avant-matchs J2 
                         </h1>
                     </div>
                     
@@ -67,42 +56,29 @@
                         <div>
                             <p class="text-base md:text-lg text-mpg-text leading-relaxed space-y-4">
                               <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
-                                <div class="flex items-center gap-2">
-                                  <span
-                                    class="rounded-md bg-yellow-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-yellow-400 ring-1 ring-inset ring-yellow-500/30"
-                                    >Derby du Périgord</span
-                                  >
+                                <div class="mb-2 flex items-center gap-2">
+                                  <span class="rounded-md bg-amber-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-400 ring-1 ring-inset ring-amber-500/30">Choc de la journée</span>
+                                  <span class="text-xs text-zinc-400">US Brocouille vs Tolosa FC</span>
                                 </div>
-                                <h2 class="mt-3 text-xl font-extrabold">
-                                  Stade Trélissacois — US Brocouille
-                                </h2>
-                                <p class="mt-3 text-sm/6 text-zinc-300">
-                                  Premier choc local et déjà des promesses : Robin annonce un
-                                  “bloc solide” et Maxime.B jure que “cette fois, ça rentre”. Spoiler :
-                                  ça pourrait finir 0-0 et une tournée de tequila sun rise.
+                                <h2 class="text-xl font-extrabold">US Brocouille — Tolosa FC</h2>
+                                <p class="mt-3 text-sm text-zinc-300">
+                                  Deux équipes lancées pleine balle en J1 et déjà en mode <em>but-fest</em>. 
+                                  <span class="font-semibold text-zinc-200">US Brocouille</span> veut confirmer son statut de favori, 
+                                  <span class="font-semibold text-zinc-200">Tolosa FC</span> arrive après une manita qui a traumatisé la ligue. 
+                                  Affiche premium, chambrage garanti : ce match pèse lourd pour le podium… et pour le groupe WhatsApp.
                                 </p>
-                              </article>
-                              <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 mt-4">
-                                <div class="flex items-center gap-2">
-                                  <span
-                                    class="rounded-md bg-red-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-red-400 ring-1 ring-inset ring-red-500/30"
-                                    >Derby des bourins</span
-                                  >
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                  <span class="rounded-md bg-emerald-500/15 px-2 py-1 text-[11px] text-emerald-300 ring-1 ring-inset ring-emerald-500/30">Forme : victoire en J1</span>
+                                  <span class="rounded-md bg-sky-500/15 px-2 py-1 text-[11px] text-sky-300 ring-1 ring-inset ring-sky-500/30">Attaques en confiance</span>
+                                  <span class="rounded-md bg-fuchsia-500/15 px-2 py-1 text-[11px] text-fuchsia-300 ring-1 ring-inset ring-fuchsia-500/30">Match à six points (moraux)</span>
                                 </div>
-                                <h2 class="mt-3 text-xl font-extrabold">
-                                  BluegolemFC — RedBull Blagnac
-                                </h2>
-                                <p class="mt-3 text-sm/6 text-zinc-300">
-                                  L'entraineur rugbyman aux méthodes douteuses veut “mettre de l’impact” ; le président blagnacais
-                                  lui contemple le départ de Kalimuendo joueur acheté pour pas moins de 41M€. On attend un match musclé,
-                                  autant dans les buts que dans les excuses.
-                                </p>
                               </article>
+                              
                             </p>
                         </div>
                         <div>
                             <div class="aspect-video rounded-2xl overflow-hidden shadow-lg shadow-mpg-light-gray/30 border-2 border-mpg-light-gray/30 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-mpg-green/40 hover:border-mpg-green/60 bg-gradient-to-br from-mpg-light-gray/20 to-mpg-green/10">
-                                <img src="assets/images/j1l1.png" alt="Mercato" class="w-full h-full object-cover transition-all duration-500 hover:brightness-110 hover:contrast-105">
+                                <img src="assets/images/j2.png" alt="Mercato" class="w-full h-full object-cover transition-all duration-500 hover:brightness-110 hover:contrast-105">
                             </div>
                         </div>
                     </div>
@@ -110,69 +86,112 @@
                     <!-- Ligne 3: Reste du texte sur toute la largeur -->
                     <div>
                         <p class="text-base md:text-lg text-mpg-text leading-relaxed">
-                          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
-                              <div class="flex items-center gap-2">
-                                <span
-                                  class="rounded-md bg-pink-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-pink-300 ring-1 ring-inset ring-pink-500/30"
-                                  >Derby féminin</span
-                                >
+                              <div class="mb-2 flex items-center gap-2">
+                                <span class="rounded-md bg-red-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-red-400 ring-1 ring-inset ring-red-500/30">Match des perdants</span>
+                                <span class="text-xs text-zinc-400">RedBullBlagnac vs Stade Trélissacois</span>
                               </div>
-                              <h2 class="mt-3 text-xl font-extrabold">
-                                Crystal Palace — Fafa FC
-                              </h2>
-                              <p class="mt-3 text-sm/6 text-zinc-300">
-                                Pas besoin d’historique pour que la tension monte : ici, perdre n’est pas une option, juste une insulte.
+                              <h2 class="text-xl font-extrabold">RedBullBlagnac — Stade Trélissacois</h2>
+                              <p class="mt-3 text-sm text-zinc-300">
+                                Le président blagnacais a craqué pour des <span class="font-semibold">attaquants tout neufs</span>, 
+                                mais perd <span class="font-semibold">Rabiot</span> et se retrouve encore avec un <span class="font-semibold">loft &gt; 40 M€</span>. 
+                                En face, le <span class="font-semibold">Stade Trélissacois</span> rêve d’une première victoire… 
+                                et surtout d’une compo <span class="font-semibold">sans Rotaldo</span> (on y croit moyen, mais on respecte l’effort).
                               </p>
+                              <p class="mt-2 text-sm text-zinc-300">
+                                Les deux équipes ont perdu en J1 : duel de rachats et de nerfs, avec bonus “panique mercato” possible des deux côtés.
+                              </p>
+                              <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-md bg-indigo-500/15 px-2 py-1 text-[11px] text-indigo-300 ring-1 ring-inset ring-indigo-500/30">RBB : puissance offensive</span>
+                                <span class="rounded-md bg-rose-500/15 px-2 py-1 text-[11px] text-rose-300 ring-1 ring-inset ring-rose-500/30">ST : mission zéro Rotaldo</span>
+                                <span class="rounded-md bg-zinc-800 px-2 py-1 text-[11px] text-zinc-300 ring-1 ring-inset ring-zinc-700">Les deux : besoin de points</span>
+                              </div>
                             </article>
                             <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
-                              <div class="flex items-center gap-2">
-                                <span
-                                  class="rounded-md bg-teal-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-teal-300 ring-1 ring-inset ring-teal-500/30"
-                                  >Duel des nouveaux</span
-                                >
+                              <div class="mb-2 flex items-center gap-2">
+                                <span class="rounded-md bg-pink-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-pink-400 ring-1 ring-inset ring-pink-500/30">Match des perdants</span>
+                                <span class="text-xs text-zinc-400">Fafa FC vs Goutssborg</span>
                               </div>
-                              <h2 class="mt-3 text-xl font-extrabold">
-                                Goutssborg — Granline FC
-                              </h2>
-                              <p class="mt-3 text-sm/6 text-zinc-300">
-                                Premier pas en Ligue “Hein” pour les deux. Greg promet du jeu
-                                vertical, Camille promet une victoire à tous ses supporters.
+                              <h2 class="text-xl font-extrabold">Fafa FC — Goutssborg</h2>
+                              <p class="mt-3 text-sm text-zinc-300">
+                                Deux défaites en ouverture, deux humeurs chafouines. 
+                                <span class="font-semibold">Fafa FC</span> a juré que ses buteurs <em>viseront le bon camp</em> cette fois 
+                                (après le CSC qui a offert la J1). 
+                                <span class="font-semibold">Goutssborg</span> a profité de la semaine pour <em>trader</em> malin : 
+                                vendre les absents, acheter des titulaires. Place aux preuves.
                               </p>
+                              <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-md bg-emerald-500/15 px-2 py-1 text-[11px] text-emerald-300 ring-1 ring-inset ring-emerald-500/30">Fafa : finir les vendanges</span>
+                                <span class="rounded-md bg-teal-500/15 px-2 py-1 text-[11px] text-teal-300 ring-1 ring-inset ring-teal-500/30">Goutss : renforts attendus</span>
+                              </div>
                             </article>
                             <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
-                              <div class="flex items-center gap-2">
-                                <span
-                                  class="rounded-md bg-indigo-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-indigo-300 ring-1 ring-inset ring-indigo-500/30"
-                                  >Match des amis</span
-                                >
+                              <div class="mb-2 flex items-center gap-2">
+                                <span class="rounded-md bg-blue-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-400 ring-1 ring-inset ring-blue-500/30">Des buts enfin?</span>
+                                <span class="text-xs text-zinc-400">Olympique13 vs Crystal Palace</span>
                               </div>
-                              <h2 class="mt-3 text-xl font-extrabold">
-                                Tolosa FC — Olympique13
-                              </h2>
-                              <p class="mt-3 text-sm/6 text-zinc-300">
-                                Maxime.D et Jérémie se connaissent par cœur, mais l’amitié pourrait
-                                s’arrêter au coup d’envoi.
+                              <h2 class="text-xl font-extrabold">Olympique13 — Crystal Palace</h2>
+                              <p class="mt-3 text-sm text-zinc-300">
+                                <span class="font-semibold">Olympique13</span> doit prouver qu’il y a bien un coach derrière l’écran : 
+                                organisation, changements, plan de jeu… tout ce qui a manqué en J1. 
+                                <span class="font-semibold">Crystal Palace</span>, elle, vise une victoire 
+                                <em>avec ses propres buts</em> (et pas un cadeau CSC). 
+                                Les intentions sont bonnes, reste à convertir.
                               </p>
+                              <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-md bg-rose-500/15 px-2 py-1 text-[11px] text-rose-300 ring-1 ring-inset ring-rose-500/30">O13 : coaching exigé</span>
+                                <span class="rounded-md bg-emerald-500/15 px-2 py-1 text-[11px] text-emerald-300 ring-1 ring-inset ring-emerald-500/30">Crystal : marquer pour de vrai</span>
+                              </div>
                             </article>
+                            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                              <div class="mb-2 flex items-center gap-2">
+                                <span class="rounded-md bg-purple-500/15 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-purple-400 ring-1 ring-inset ring-purple-500/30">Foot vs Rugby</span>
+                                <span class="text-xs text-zinc-400">Granline FC vs BluegolemFC</span>
+                              </div>
+                              <h2 class="text-xl font-extrabold">Granline FC — BluegolemFC</h2>
+                              <p class="mt-3 text-sm text-zinc-300">
+                                Deux vainqueurs au départ. <span class="font-semibold">Granline</span> 
+                                a tout d’un débutant chanceux… ou d’un visionnaire qui a lu le patch-note du destin. 
+                                <span class="font-semibold">BluegolemFC</span> croit au triplé de 
+                                <span class="font-semibold">Panichelli</span> (“même sur pénalité”, a-t-il soufflé). 
+                                Verdict : génie naissant ou hype de week-end ?
+                              </p>
+                              <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-md bg-indigo-500/15 px-2 py-1 text-[11px] text-indigo-300 ring-1 ring-inset ring-indigo-500/30">Granline : confirmation attendue</span>
+                                <span class="rounded-md bg-amber-500/15 px-2 py-1 text-[11px] text-amber-300 ring-1 ring-inset ring-amber-500/30">BGFC : Panichelli show ?</span>
+                              </div>
+                            </article>
+                            
                           </div>
                         </p>
                     </div>
                     
                     <!-- Section d'informations supplémentaires (optionnelle) -->
-                    <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6">
-                        <h4 class="text-mpg-accent font-medium mb-2">📢 INFO FLASH – Le Stade Trélissacois a déjà fait son premier coup de bluff.</h4>
-                        <div class="text-sm text-mpg-text space-y-2">
-                          Coup de théâtre en Ligue “Hein” : Robin n’a pas mis à jour sa compo et aligne encore Diakité… parti en Premier League. Oubli monumental ou coup de bluff ? Les réseaux s’enflamment déjà.
-                            <br/>
-                        </div>
-                    </div>
+                    <article class="rounded-2xl border border-pink-700/50 bg-pink-900/30 p-6">
+                      <div class="mb-2 flex items-center gap-2">
+                        <span class="rounded-md bg-pink-500/20 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-pink-300 ring-1 ring-inset ring-pink-500/30">Info Flash</span>
+                        <span class="text-xs text-pink-200">La Chèvre MPG voit la vie en rose</span>
+                      </div>
+                      <h2 class="text-xl font-extrabold text-pink-200">La chèvre MPG au Festival Rose 🌸🐐</h2>
+                      <p class="mt-3 text-sm text-pink-100">
+                        Breaking news : la mascotte officielle de la Ligue “Hein” a décidé de se mettre au rose pour coller 
+                        à l’ambiance du <span class="font-semibold">Festival Rose de Toulouse</span>. 
+                        Certains joueurs disent que ça lui donne un petit air de star, d’autres qu’elle ressemble plutôt 
+                        à leur défense : jolie de loin, mais ridicule de près.
+                      </p>
+                      <p class="mt-2 text-sm text-pink-100">
+                        On murmure même que <em>certains coachs</em> ont pris ça comme un signe : 
+                        “si la chèvre se met au rose, c’est que ma saison est déjà à l’eau”.  
+                        À voir si le rose portera bonheur… ou si c’est juste la couleur parfaite pour cacher les rougeurs après un 5-0.
+                      </p>
+                    </article>
                 </article>
             </div>
         </section>
 
         <!-- Articles Grid -->
-        <section class="py-16 bg-mpg-dark">
+        <section class="hidden py-16 bg-mpg-dark">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white mb-12">Dernières actualités</h2>
                 
@@ -265,11 +284,7 @@
         </nav>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-mpg-gray border-t border-mpg-light-gray py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-mpg-text">&copy; 2025 Ligue Hein. Du foot, mais pas que.</p>
-        </div>
-    </footer>
+    <!-- Placeholder pour le footer -->
+    <div id="footer-placeholder"></div>
 </body>
 </html>
