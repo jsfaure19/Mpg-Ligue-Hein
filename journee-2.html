@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Ligue Hein - 2ème Journée</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/components.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mpg-green': '#00D9A3',
+            'mpg-dark': '#0A0A0A',
+            'mpg-gray': '#1A1A1A',
+            'mpg-light-gray': '#2A2A2A',
+            'mpg-text': '#E5E5E5',
+            'mpg-accent': '#FFD700'
+          },
+          fontFamily: {
+              'inter': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-mpg-dark text-mpg-text font-inter min-h-screen">
+  <!-- Placeholder pour la navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-mpg-gray to-mpg-light-gray py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <!-- Texte et informations -->
+          <div class="text-center lg:text-left space-y-6">
+            <div class="flex justify-center lg:justify-start gap-4 text-sm">
+              <span class="bg-mpg-green text-mpg-dark px-3 py-1 rounded-full font-medium">22-24/08/25</span>
+              <span class="bg-purple-600 text-black px-3 py-1 rounded-full font-medium">2ème Journée</span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
+              🏆 Ligue Hein — 2ème Journée
+            </h1>
+            <p class="text-xl text-mpg-text max-w-2xl mx-auto lg:mx-0">
+              La deuxième journée est là ! Découvrez tous les résultats, 
+              les performances et les anecdotes de cette deuxième journée.
+            </p>
+          </div>
+          
+          <!-- Espace pour l'image -->
+          <div class="flex justify-center lg:justify-end">
+            <div class="aspect-video w-full max-w-md rounded-2xl overflow-hidden shadow-lg shadow-mpg-light-gray/30 border-2 border-mpg-light-gray/30 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-mpg-green/40 hover:border-mpg-green/60 bg-gradient-to-br from-mpg-light-gray/20 to-mpg-green/10">
+              <!-- Placeholder pour l'image -->
+              <img src="assets/images/j2.png" alt="2ème Journée Ligue Hein" class="w-full h-full object-cover transition-all duration-500 hover:brightness-110 hover:contrast-105">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Résultats des Matchs -->
+    <section class="py-16 bg-mpg-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center">📊 Résultats de la 2ème Journée</h2>
+        
+        <!-- Grille des matchs -->
+        <main class="space-y-10">
+
+          <!-- Match 1 -->
+          <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-red-500/15 text-red-400 px-2 py-1 text-xs font-bold rounded ring-1 ring-inset ring-red-500/30">Match le plus prolifique</span>
+              <span class="text-xs text-mpg-text">RedBullBlagnac vs Stade Trélissacois</span>
+            </div>
+            
+            <h3 class="text-xl font-extrabold text-white mb-4">
+              Le Stade Trélissacois s’impose 4–2 face au RedBullBlagnac !
+            </h3>
+            
+            <div class="text-mpg-text space-y-4 mb-6">
+              <p class="text-sm leading-relaxed">
+                Premier succès pour <span class="font-semibold text-mpg-text">Robin</span> et son 
+                <span class="font-semibold">Stade Trélissacois</span>, qui s’imposent dans un festival offensif.  
+                Sans faire le moindre ajustement tactique, ça déroule avec des buts de <em>Tolisso</em>, <em>Sinayoko</em> et un doublé de <em>Magri</em>.
+              </p>
+              <p class="text-sm leading-relaxed">
+                Côté <span class="font-semibold text-mpg-text">Jahno</span>, le <span class="font-semibold">RedBullBlagnac</span> inquiète : 
+                deuxième défaite de rang, attaquants stars muets et gardien expulsé. Le loft à 140 millions ressemble plus à un Airbnb sans ménage qu’à une équipe de football.
+              </p>
+            </div>
+            
+            <!-- Buteurs -->
+            <div class="border-t border-mpg-light-gray pt-4">
+              <h4 class="text-sm font-bold text-mpg-text mb-2">⚽️ Buteurs</h4>
+              <ul class="space-y-1 text-sm text-mpg-text">
+                <li><span class="font-medium text-emerald-400">Stade Trélissacois :</span> Tolisso, Sinayoko, Magri (x2)</li>
+                <li><span class="font-medium text-sky-400">RedBullBlagnac :</span> Ruiz, Fofana</li>
+              </ul>
+            </div>
+            
+            <p class="mt-4 text-sm text-mpg-text/60 italic">
+              Le RBB n’a plus de joker, la prochaine journée sent déjà la crise.
+            </p>
+          </article>
+        
+        
+          <!-- Match 2 -->
+          <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-purple-500/15 text-purple-400 px-2 py-1 text-xs font-bold rounded ring-1 ring-inset ring-purple-500/30">Derby féminin</span>
+              <span class="text-xs text-mpg-text">Fafa FC vs Goutssborg</span>
+            </div>
+            
+            <h3 class="text-xl font-extrabold text-white mb-4">
+              Fafa FC arrache sa première victoire (2–1) malgré un nouveau CSC !
+            </h3>
+            
+            <div class="text-mpg-text space-y-4 mb-6">
+              <p class="text-sm leading-relaxed">
+                Incroyable mais vrai : <span class="font-semibold">Fafa FC</span> encaisse encore un but contre son camp… mais gagne quand même. 
+                <em>Kebbal</em> et <em>Greenwood</em> sauvent la mise face à un <span class="font-semibold text-mpg-text">Goutssborg</span> en plein doute.
+              </p>
+              <p class="text-sm leading-relaxed">
+                Le bonus <span class="italic">Zahia</span> n’a pas changé grand-chose : deuxième défaite de suite pour le coach, qui découvre que l’apprentissage MPG peut être cruel, surtout en charmante compagnie.
+              </p>
+            </div>
+            
+            <!-- Buteurs -->
+            <div class="border-t border-mpg-light-gray pt-4">
+              <h4 class="text-sm font-bold text-mpg-text mb-2">⚽️ Buteurs</h4>
+              <ul class="space-y-1 text-sm text-mpg-text">
+                <li><span class="font-medium text-emerald-400">Fafa FC :</span> Kebbal, Greenwood</li>
+                <li><span class="font-medium text-sky-400">Goutssborg :</span> Akpa (csc)</li>
+              </ul>
+            </div>
+            
+            <p class="mt-4 text-sm text-mpg-text/60 italic">
+              Fafa FC respire enfin, Goutssborg cherche encore son mode d’emploi.
+            </p>
+          </article>
+        
+        
+          <!-- Match 3 -->
+          <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-indigo-500/15 text-indigo-400 px-2 py-1 text-xs font-bold rounded ring-1 ring-inset ring-indigo-500/30">Équilibre parfait</span>
+              <span class="text-xs text-mpg-text">Olympique13 vs Crystal Palace</span>
+            </div>
+            
+            <h3 class="text-xl font-extrabold text-white mb-4">
+              Olympique13 et Crystal Palace se neutralisent (1–1)
+            </h3>
+            
+            <div class="text-mpg-text space-y-4 mb-6">
+              <p class="text-sm leading-relaxed">
+                <span class="font-semibold">Boga</span> et <span class="font-semibold">Simon</span> ont sauvé les meubles, offrant un nul logique entre deux équipes timides.  
+                Pas de coaching gagnant cette fois : <em>Saïd</em> et <em>Aubameyang</em> (auteur d’un doublé dans la vraie vie) sont restés scotchés au banc.
+              </p>
+              <p class="text-sm leading-relaxed">
+                Résultat : deux coachs sans prise de risque, un match sans folie et des supporters frustrés. MPG aime les coups tactiques… mais là, c’était service minimum.
+              </p>
+            </div>
+            
+            <!-- Buteurs -->
+            <div class="border-t border-mpg-light-gray pt-4">
+              <h4 class="text-sm font-bold text-mpg-text mb-2">⚽️ Buteurs</h4>
+              <ul class="space-y-1 text-sm text-mpg-text">
+                <li><span class="font-medium text-emerald-400">Olympique13 :</span> Boga</li>
+                <li><span class="font-medium text-sky-400">Crystal Palace :</span> Simon</li>
+              </ul>
+            </div>
+            
+            <p class="mt-4 text-sm text-mpg-text/60 italic">
+              Deux coachs prudents, un match qui l’était tout autant.
+            </p>
+          </article>
+        
+        
+          <!-- Match 4 -->
+          <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-green-500/15 text-green-400 px-2 py-1 text-xs font-bold rounded ring-1 ring-inset ring-green-500/30">Le derby des Maxime</span>
+              <span class="text-xs text-mpg-text">US Brocouille vs Tolosa FC</span>
+            </div>
+            
+            <h3 class="text-xl font-extrabold text-white mb-4">
+              Tolosa FC s’impose dans le derby 2–1 !
+            </h3>
+            
+            <div class="text-mpg-text space-y-4 mb-6">
+              <p class="text-sm leading-relaxed">
+                Le choc des Maxime a tenu ses promesses ! <span class="font-semibold">Tolosa FC</span> s’impose grâce à <em>Emegha</em> et <em>Giroud</em>, malgré l’ouverture de <em>Højbjerg</em> pour <span class="font-semibold">US Brocouille</span>.
+              </p>
+              <p class="text-sm leading-relaxed">
+                Mention spéciale au bonus <span class="italic">McDo</span> utilisé sur <em>Merlin</em>, totalement inefficace. À tel point que le coach a décidé de le remplacer… probablement au drive du prochain match.
+              </p>
+            </div>
+            
+            <!-- Buteurs -->
+            <div class="border-t border-mpg-light-gray pt-4">
+              <h4 class="text-sm font-bold text-mpg-text mb-2">⚽️ Buteurs</h4>
+              <ul class="space-y-1 text-sm text-mpg-text">
+                <li><span class="font-medium text-emerald-400">Tolosa FC :</span> Emegha, Giroud</li>
+                <li><span class="font-medium text-sky-400">US Brocouille :</span> Højbjerg</li>
+              </ul>
+            </div>
+            
+            <p class="mt-4 text-sm text-mpg-text/60 italic">
+              Tolosa confirme, US Brocouille se perd dans les menus Happy Meal.
+            </p>
+          </article>
+        
+        
+          <!-- Match 5 -->
+          <article class="bg-mpg-gray border border-mpg-light-gray rounded-lg p-6 hover:border-mpg-green transition-colors">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-yellow-500/15 text-yellow-400 px-2 py-1 text-xs font-bold rounded ring-1 ring-inset ring-yellow-500/30">Chance ou génie ?</span>
+              <span class="text-xs text-mpg-text">Granline FC vs BluegolemFC</span>
+            </div>
+            
+            <h3 class="text-xl font-extrabold text-white mb-4">
+              BluegolemFC s’impose 2–1 malgré un Rotaldo dans les cages !
+            </h3>
+            
+            <div class="text-mpg-text space-y-4 mb-6">
+              <p class="text-sm leading-relaxed">
+                Avec un <span class="font-semibold">Rotaldo</span> en gardien à cause de la blessure de <em>Penders</em>, 
+                on s’attendait à un carnage pour <span class="font-semibold">BluegolemFC</span>. 
+                Mais c’est finalement sa défense qui a tenu, et même marqué par <em>Doucouré</em>, avant que <em>Fofana</em> ne scelle la victoire.
+              </p>
+              <p class="text-sm leading-relaxed">
+                <span class="font-semibold">Camille</span>, coach de <span class="font-semibold">Granline</span>, peut s’en vouloir : <em>Dembélé</em> a manqué un penalty qui aurait offert le nul. 
+                On raconte que le coach est encore au Stadium de Toulouse, en train de chercher le ballon…
+              </p>
+            </div>
+            
+            <!-- Buteurs -->
+            <div class="border-t border-mpg-light-gray pt-4">
+              <h4 class="text-sm font-bold text-mpg-text mb-2">⚽️ Buteurs</h4>
+              <ul class="space-y-1 text-sm text-mpg-text">
+                <li><span class="font-medium text-emerald-400">BluegolemFC :</span> Doucouré, Fofana</li>
+                <li><span class="font-medium text-sky-400">Granline FC :</span> Moffi</li>
+              </ul>
+            </div>
+            
+            <p class="mt-4 text-sm text-mpg-text/60 italic">
+              Bluegolem gagne avec un Rotaldo gardien… MPG, toujours plus fou.
+            </p>
+          </article>
+        
+        </main>
+        
+      </div>
+    </section>
+
+    <!-- Section d'informations supplémentaires -->
+    <section class="py-16 bg-mpg-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article class="rounded-2xl border border-pink-700/50 bg-pink-900/30 p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="rounded-md bg-pink-500/20 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-pink-300 ring-1 ring-inset ring-pink-500/30">Info Flash</span>
+            <span class="text-xs text-pink-200">La Chèvre MPG voit la vie en rose</span>
+          </div>
+          <h2 class="text-xl font-extrabold text-pink-200">La chèvre MPG au Festival Rose 🌸🐐</h2>
+          <p class="mt-3 text-sm text-pink-100">
+            Breaking news : la mascotte officielle de la Ligue “Hein” a décidé de se mettre au rose pour coller 
+            à l’ambiance du <span class="font-semibold">Festival Rose de Toulouse</span>. 
+            Certains joueurs disent que ça lui donne un petit air de star, d’autres qu’elle ressemble plutôt 
+            à leur défense : jolie de loin, mais ridicule de près.
+          </p>
+          <p class="mt-2 text-sm text-pink-100">
+            On murmure même que <em>certains coachs</em> ont pris ça comme un signe : 
+            “si la chèvre se met au rose, c’est que ma saison est déjà à l’eau”.  
+            À voir si le rose portera bonheur… ou si c’est juste la couleur parfaite pour cacher les rougeurs après un 5-0.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Statistiques de la Journée -->
+    <section class="py-16 bg-mpg-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center">📈 Statistiques de la 1ère Journée</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-mpg-green mb-2">17</div>
+            <div class="text-mpg-text">Buts marqués</div>
+          </div>
+          
+          <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-mpg-accent mb-2">1</div>
+            <div class="text-mpg-text">Rotaldo gardien</div>
+          </div>
+          
+          <div class="bg-mpg-dark border border-mpg-light-gray rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-red-400 mb-2">1</div>
+            <div class="text-mpg-text">CSC (encore)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation entre journées -->
+    <section class="py-16 bg-mpg-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <a href="journee-1.html" class="text-mpg-green hover:text-mpg-accent transition-colors">
+            <div class="text-sm">Journée précédente ←</div>
+            <div class="text-lg font-medium">1ère Journée</div>
+          </a>
+          
+          <div class="text-center">
+            <div class="text-2xl font-bold text-mpg-green">2ème Journée</div>
+            <div class="text-sm text-mpg-text">22-24 août 2025</div>
+          </div>
+          
+          <a href="#journee-2" class="text-gray-600 hover:text-mpg-accent transition-colors pointer-events-none" disabled>
+            <div class="text-sm">Journée suivante →</div>
+            <div class="text-lg font-medium">3ème Journée(bientôt disponible)</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Placeholder pour le footer -->
+  <div id="footer-placeholder"></div>
+</body>
+</html>

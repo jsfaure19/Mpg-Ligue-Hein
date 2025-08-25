@@ -27,6 +27,14 @@ class ComponentLoader {
                 matchsBtn.classList.add('text-mpg-green', 'font-medium', 'border-b-2', 'border-mpg-green', 'pb-1');
                 console.log('✅ Lien "Matchs" activé');
             }
+        } else if (currentPage.includes('journee-2')) {
+            // Page de la 2ème journée - activer "Matchs"
+            const matchsBtn = document.getElementById('nav-matchs');
+            if (matchsBtn) {
+                matchsBtn.classList.remove('text-mpg-text', 'hover:text-mpg-green', 'transition-colors');
+                matchsBtn.classList.add('text-mpg-green', 'font-medium', 'border-b-2', 'border-mpg-green', 'pb-1');
+                console.log('✅ Lien "Matchs" activé');
+            }
         } else if (currentPage.includes('coachs')) {
             // Page des coachs - activer "Coachs"
             const coachsLink = document.getElementById('nav-coachs');
@@ -54,7 +62,9 @@ class ComponentLoader {
         }
 
         try {
-            const response = await fetch(`partials/${name}.html`);
+            // Ajouter un paramètre de version pour éviter le cache
+            const timestamp = Date.now();
+            const response = await fetch(`partials/${name}.html?v=${timestamp}`);
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             }
